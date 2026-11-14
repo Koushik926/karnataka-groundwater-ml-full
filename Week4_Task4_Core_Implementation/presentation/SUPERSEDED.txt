@@ -1,0 +1,10 @@
+Groundwater_Depletion_Presentation.pptx
+build_presentation.py
+build_impressive_presentation.py
+
+These are the October deck and its builders. They contain metrics produced from
+SYNTHETIC data (RMSE 3.63, R2 0.40, 68% CGWB accuracy, 5 risk indicators including
+two random ones) and must not be shown or reused.
+
+Use instead:  python presentation/build_review_deck.py
+              -> presentation/decks/Phase1_Review_<NAME>.pptx

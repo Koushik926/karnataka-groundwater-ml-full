@@ -1,0 +1,69 @@
+{
+  "data_source": "CGWB (India-WRIS) Karnataka quarterly observations",
+  "selected_model": "xgboost",
+  "validation_metrics": {
+    "random_forest": {
+      "rmse": 3.921579635799064,
+      "mae": 2.386846167893962,
+      "r2": 0.6940903758683128
+    },
+    "xgboost": {
+      "rmse": 3.9130585828673032,
+      "mae": 2.3486192679874973,
+      "r2": 0.6954183306067028
+    },
+    "svr": {
+      "rmse": 5.896332764472039,
+      "mae": 3.673745587697218,
+      "r2": 0.30843177048875614
+    },
+    "baseline_last_value": {
+      "rmse": 4.961218078732507,
+      "mae": 3.116914874815906,
+      "r2": 0.5103929099471889
+    }
+  },
+  "test_metrics": {
+    "rmse": 3.1363970964415944,
+    "mae": 1.9861607463757562,
+    "r2": 0.6320035225425347,
+    "baseline_rmse": 3.8381994667960297,
+    "baseline_r2": 0.44889207432841693
+  },
+  "split": {
+    "train": {
+      "rows": 79218,
+      "from": "1996-05-15",
+      "to": "2017-05-15"
+    },
+    "val": {
+      "rows": 16975,
+      "from": "2017-05-15",
+      "to": "2020-11-30"
+    },
+    "test": {
+      "rows": 16976,
+      "from": "2020-11-30",
+      "to": "2024-08-25"
+    }
+  },
+  "n_features": 15,
+  "feature_columns": [
+    "GWL_lag1",
+    "GWL_lag2",
+    "GWL_lag3",
+    "GWL_lag4",
+    "GWL_rolling_mean",
+    "GWL_rolling_std",
+    "sin_month",
+    "cos_month",
+    "Latitude",
+    "Longitude",
+    "rain_q",
+    "rain_prev_q",
+    "rain_12m",
+    "rain_monsoon",
+    "rain_anomaly_12m"
+  ],
+  "forecast_horizon_quarters": 4
+}

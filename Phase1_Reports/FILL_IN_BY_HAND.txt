@@ -1,0 +1,52 @@
+NOTHING LEFT TO TYPE
+Phase-1 Review, 14 November 2026, 1:30 PM
+=========================================================================
+
+Every field in both reports and both decks is filled.  There is no blank,
+no ruled line and no "enter actual value" anywhere in any of the ten
+reports or the ten decks - checked page by page.
+
+The Week-7 mock interview is recorded as what it actually was: a
+qualitative review, not a marked one.  The feedback column carries the five
+points recorded at that session, and the "what I will improve" column is
+specific to each of you.  No score was invented to fill the cell.
+
+
+WHAT YOU STILL DO BY HAND - three signatures
+-------------------------------------------------------------------------
+  [ ] Sign and date the declaration on the PROJECT report
+  [ ] Sign and date the declaration on the INTERNSHIP report
+  [ ] Leave the four evaluation sheets alone - the guide and the examiner
+      fill the marks, Designation and Time in the room
+
+
+READ BEFORE YOU SIGN
+-------------------------------------------------------------------------
+Internship report 5.3, Reflection (150-200 words) - a draft is printed
+there, built only from what you actually did in Weeks 1-7.  Read it,
+correct anything untrue of you, and put it in your own words.
+
+Internship report 2.1 - the baseline and "now" ratings were set from what
+you demonstrably built.  They are a judgement, not a measurement.  Check
+your row and change any number you disagree with.
+
+Both reports - check your name, SRN and section on the title page.
+
+
+WHAT CHANGED IN THIS BUILD
+-------------------------------------------------------------------------
+Project report is now 34 pages and follows the Project Report Template
+heading for heading:
+  - Title page carries only the five fields the template asks for.
+  - 1.2 Literature survey now has all 20 papers, not 5.
+  - 1.3 Literature gaps are numbered Gap 1, Gap 2, Gap 3, followed by
+    "Gap addressed by our project".
+  - 1.4 Evidence 1, 2 and 3 contain the evidence itself - the measured
+    trend, the CGWB category chart and the research gap table - instead of
+    naming a document to look in.
+  - 2.3 System architecture and 2.4 flowcharts, DFDs, UML and the ER
+    diagram are all present, 24 figures in total.
+  - Every figure has a caption that says what the picture shows.
+  - School line reads "School of Computer Science and Engineering".
+    The programme line still reads CSIT or ISE, which is what each of you
+    is actually enrolled in.

@@ -1,0 +1,33 @@
+# ---- personal data of people who are not this repository's owner -------------
+# This repo is public. Four of the five team members did not agree to have their
+# contact details published, so the file holding them and every document that
+# embeds them stay out of git.
+Week4_Task4_Core_Implementation/scripts/student_personal_local.py
+Phase1_Reports/Internship_Report_*
+Week4_Task4_Core_Implementation/presentation/decks/Phase1_Internship_*.pptx
+
+# ---- third-party publisher PDFs ---------------------------------------------
+# Downloaded for the literature survey. We hold no right to redistribute them;
+# papers/TO_DOWNLOAD.txt lists the DOIs so anyone can fetch their own copies.
+papers/
+
+# ---- duplicated working copies and archives ---------------------------------
+Week4_Task4_Core_Implementation 2/
+Week4_Task4_Core_Implementation 3/
+*.zip
+
+# ---- python / tooling -------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# ---- os ---------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db

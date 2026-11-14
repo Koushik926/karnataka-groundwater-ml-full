@@ -1,0 +1,2 @@
+This folder is an OUTDATED DUPLICATE of Week4_Task4_Core_Implementation.
+Use Week4_Task4_Core_Implementation. Safe to delete.

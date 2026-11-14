@@ -1,0 +1,8 @@
+This folder is an OUTDATED DUPLICATE of Week4_Task4_Core_Implementation.
+
+It predates the November 2026 rebuild: it has no src/rainfall.py, its Module 2
+still works at district level with four indicators, and its outputs/ were written
+before the real-data fixes. Any number taken from here will be wrong.
+
+Use Week4_Task4_Core_Implementation. This folder is safe to delete.
+Marked 7 November 2026.

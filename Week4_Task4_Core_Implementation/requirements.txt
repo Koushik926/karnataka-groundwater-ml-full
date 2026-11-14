@@ -1,0 +1,24 @@
+# Runtime dependencies, Phase-1.
+#
+# Only packages the code actually imports are listed. pymannkendall and shap
+# were listed here previously and are imported nowhere: Mann-Kendall and Sen's
+# slope are implemented from first principles in src/data_processor.py, and
+# SHAP is Phase-2 work. Listing them overstated what the project depends on.
+#
+# Versions are the ones the Phase-1 results were produced with, on Python 3.14.
+# Install into a virtual environment:
+#     python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+xgboost==3.4.1
+matplotlib==3.11.2
+seaborn==0.13.2
+streamlit==1.67.0
+plotly==7.1.0
+pytest==9.2.0
+
+# Optional - only experiments/benchmark.py (the LSTM benchmark) imports torch.
+# The delivered pipeline, the tests and the dashboard all run without it.
+# torch==2.15.0

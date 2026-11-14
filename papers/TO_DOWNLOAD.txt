@@ -1,0 +1,44 @@
+PAPERS FOR THE WEEK 1 LITERATURE SURVEY
+Numbers match the survey table and the reference list.
+Last checked 7 November 2026. Open-access status verified against OpenAlex.
+
+HAVE (12 of 20)
+  01  Hanumantha et al., 2026   Groundwater vulnerability, Karnataka (DRASTIC + GIS)
+  02  Srinivasan et al., 2025   PLOS Water
+  03  Alkon et al., 2024        Groundwater depletion across India  <-- our R2 benchmark
+  05  Halder et al., 2024       Bagging and boosting ensembles
+  06  Naik et al., 2024
+  07  Patra & Chu, 2024
+  10  Tao et al., 2022          Review of ML for groundwater level prediction
+  11  Wunsch et al., 2022       Deep learning, Germany to 2100
+  15  Wunsch et al., 2021
+  17  Supreetha et al., 2020    Lion-algorithm LSTM, Udupi, Karnataka
+  19  Asoka et al., 2017        Monsoon vs pumping
+  20  Bhanja et al., 2017
+
+STILL NEEDED (8)
+
+A. FREE, but the publisher blocks automated downloads.
+   Open the link in your browser and click "Download PDF" - no login, no payment.
+   Save into this folder using the filename shown.
+
+  08  Wang et al., 2024         save as 08_Wang_2024.pdf
+      https://doi.org/10.2166/hydro.2024.226
+  16  Mohanavelu et al., 2020   save as 16_Mohanavelu_2020.pdf
+      https://www.mdpi.com/2073-4441/12/11/3209
+  18  Yadav et al., 2020        save as 18_Yadav_2020.pdf
+      https://dspace.lib.cranfield.ac.uk/items/53d747af-92df-4419-9caf-39e8092995bb
+      NOTE: the earlier version of this file listed 18 as paywalled. It is not.
+      The published version in Science of the Total Environment is paywalled, but
+      Cranfield University hosts the accepted manuscript free (CC BY-NC-ND).
+      Mirror if the Cranfield page is slow: https://core.ac.uk/download/288345668.pdf
+
+B. PAYWALLED. Use the REVA library / campus network, or ask the guide.
+   If you cannot get one, you can still cite it from the abstract - just do not
+   claim to have read the full text.
+
+  04  Boo et al., 2024          https://doi.org/10.1016/j.watres.2024.121249
+  09  Shakya et al., 2022       https://doi.org/10.1016/j.gsd.2022.100825
+  12  Jyolsna et al., 2021      https://doi.org/10.1080/02626667.2021.1896719
+  13  Malakar et al., 2021      https://doi.org/10.1021/acsestengg.0c00238
+  14  Saha et al., 2021         https://doi.org/10.1016/j.jclepro.2021.128073
