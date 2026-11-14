@@ -31,3 +31,6 @@ env/
 .DS_Store
 ._*
 Thumbs.db
+
+# the second git dir used for the private full-archive repo
+.git-full/

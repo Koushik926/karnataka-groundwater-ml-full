@@ -106,7 +106,7 @@ if page == "Overview":
               help="Baseline = predict the last observed value.")
     if risk is not None:
         high = int((risk["risk_class"] >= 3).sum())
-        k4.metric("Districts at High/Very High risk",
+        k4.metric("Taluks at High/Very High risk",
                   f"{high} of {len(risk)}", f"{high / len(risk) * 100:.0f}%")
 
     if split:
@@ -187,17 +187,17 @@ elif page == "Module 2: Risk Mapping":
         st.warning("No risk mapping found. Run `python -m src.main` first.")
         st.stop()
 
-    st.subheader("Risk class by district")
+    st.subheader("Risk class by taluk")
     counts = (risk["risk_label"].value_counts()
               .reindex(RISK_ORDER).fillna(0).astype(int).reset_index())
     counts.columns = ["Risk class", "Districts"]
     fig = px.bar(counts, x="Risk class", y="Districts", text="Districts",
                  color="Risk class", color_discrete_map=RISK_COLOURS,
                  category_orders={"Risk class": RISK_ORDER},
-                 title="Number of districts in each risk class")
+                 title="Number of taluks in each risk class")
     fig.update_traces(textposition="outside")
     fig.update_layout(legend_title_text="Risk class (colour)",
-                      yaxis_title="Number of districts")
+                      yaxis_title="Number of taluks")
     st.plotly_chart(fig, use_container_width=True)
 
     if {"lat", "lon"}.issubset(risk.columns):
@@ -207,19 +207,24 @@ elif page == "Module 2: Risk Mapping":
             color_discrete_map=RISK_COLOURS,
             category_orders={"risk_label": RISK_ORDER},
             size=risk["risk_index"].clip(lower=0.05) * 30,
-            hover_name="District",
+            hover_name="Taluk",
             hover_data={"risk_index": ":.3f", "current_depth": ":.2f",
                         "decline_rate": ":.3f", "lat": False, "lon": False},
             zoom=5.3, height=560,
-            title="District centroids, coloured by risk class and sized by risk index")
+            # plotly 5 auto-fitted the view to the points; plotly 7 does not, and
+            # without an explicit centre the map opens at (0, 0) in the Atlantic.
+            center={"lat": float(risk["lat"].mean()),
+                    "lon": float(risk["lon"].mean())},
+            title="Taluk centroids, coloured by risk class and sized by risk index")
         fig.update_layout(**{_map_style_key: "carto-positron"},
                           legend_title_text="Risk class (colour)",
                           margin=dict(l=0, r=0, t=50, b=0))
         st.plotly_chart(fig, use_container_width=True)
 
-    st.subheader("Composite risk index by district")
+    st.subheader("Composite risk index by taluk")
     r = risk.sort_values("risk_index", ascending=False)
-    fig = px.bar(r, x="risk_index", y="District", orientation="h",
+    r = r.assign(unit=r["Taluk"].str.title() + " (" + r["District"].str.title() + ")")
+    fig = px.bar(r, x="risk_index", y="unit", orientation="h",
                  text=r["risk_index"].round(3),
                  color="risk_label", color_discrete_map=RISK_COLOURS,
                  category_orders={"risk_label": RISK_ORDER},
